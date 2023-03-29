@@ -1,0 +1,673 @@
+
+/* <!--  vamos a definir los colores primarios que nos ayuda en toda la pagina  --> */
+
+:root{
+
+    --black:#000000;
+    --white: #FFFFFF;
+    --very-light-pink: #C7C7C7;
+    --text-input-field: #F7F7F7;
+    --dark: #232830;
+    --hospital-green: #ACD9B2;
+    /* creamos medidas  */
+    --sm: 14px;
+    --md: 16px;
+    --ld: 18px;
+    --md: 12px;
+
+
+}
+
+body{
+    margin: 0;  /* quitamos margen a el body  */
+    font-family: 'quicksand', sans-serif;
+}
+
+
+/* login */
+.login{
+    width: 100%;
+    height: 100vh;
+    display: grid;  /* esta propiedad con la siguiente linea, nos ayuda a centrar  */
+    place-items: center; 
+    
+
+}
+
+/* contenedor_1 */
+
+.contenedor_1{
+    display: grid;
+    grid-template-rows: auto 1fr auto; 
+    width: 350px;
+   
+}
+
+
+.logo{
+
+    width: 160px;
+    border-radius: 50%;
+    justify-self: center;
+    /* display: none; */   /* quita el logo mirar bien el funcionamiento  */
+}
+
+
+.titulo_principal{
+    font-size: var(--ld); /* usamos var para invocar las medidas que generamos */
+    margin-bottom: 12px;
+    text-align: center;  /* centramos titulo  */
+    color: #000000;
+}
+
+.subtitulo{
+    color: var(--very-light-pink);
+    font-size: var(--md);
+    font-weight: 300;
+    margin-bottom: 30px;
+    margin-top: 0;
+    text-align: center;
+
+}
+
+.label_password{
+    font-size: var(--sm);
+    font-weight: bold;
+    margin-bottom: 6px;
+    color: #000000;
+}
+
+#Password{
+    background-color: var(--text-input-field);
+    border: none;
+    border-radius: 8px;
+    height: 20px;
+    font-size: var(--md);
+    padding: 6px;
+    margin-bottom: 25px;
+    
+}
+
+.primary-button{
+    background-color: var(--hospital-green);
+    border-radius: 8px;
+    width: 100%;
+    border: none;
+    color: var(--white);
+    cursor: pointer;  /* caundo ponemos el curson en este tiltulo sale una mano y no la flecha  */
+    font-size: var(--md);
+    font-weight: bold;
+    height: 30px;
+}
+
+
+.login-button{
+    margin-top: 14px;
+    margin-bottom: 30px;
+
+}
+@media(max-width: 640){
+    .logo{
+        display: block;
+    }
+}
+
+.logo-email {
+    width: 100px;
+    height: 100px;
+    border-radius: 20%;
+    background-color:var(--text-input-field);
+    justify-self: center;
+    margin-bottom: 30px;
+
+}
+
+.resend{
+    font-size: var(--sm);
+}
+
+.resend samp{
+    color: var(--very-light-pink);
+}
+.resend a{
+    text-decoration: none;
+    color: var(--hospital-green);
+
+}
+
+#email{
+    background-color: var(--text-input-field);
+    border: none;
+    border-radius: 8px;
+    padding: 6px;
+    margin-bottom: 20px;
+    
+    font-size: var(--md);
+}
+
+.label_email{
+    font-size: var(--sm);
+    font-weight: bold;
+    margin-bottom: 10px;
+
+}
+
+.form_1{
+    margin-bottom: 8px;
+    
+}
+
+.forgot_password{
+    color: var(--hospital-green);
+    font-size: var(--sm);
+    justify-self: center;
+    margin-top: 30px;
+    font-size: var(--md);
+    margin-bottom: 50px;
+}
+
+.secondar-button{
+
+    background-color: var(--white);
+    border-radius: 8px;
+    width: 100%;
+    
+    border: 2px solid var(--hospital-green);
+    color: var(--hospital-green);
+    cursor: pointer;  /* caundo ponemos el curson en este tiltulo sale una mano y no la flecha  */
+    font-size: var(--md);
+   /*  font-weight: bold; */
+    height: 30px;
+
+}
+/* 
+@media (max-width: 640px) {
+    .logo {
+        display: block;
+    }
+    .secondar-button{
+        bottom: 0;
+        margin-bottom: 24px;
+    }
+} */
+
+.contenedor_1 input{
+    margin-bottom: 12px;
+}
+.titulo_principal_name{
+    font-size: var(--ld); /* usamos var para invocar las medidas que generamos */
+    margin-bottom: 35px;
+    text-align: start;  /* centramos titulo  */
+    color: #000000;
+}
+
+.logo_p{
+
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 0;
+    
+
+}
+
+.logo_edit{
+    width: 90px;
+    border-radius: 50%;
+    justify-self:center;
+}
+
+/* ofertas.html  */
+
+.ofertas_container{
+    display: grid;  /*  */
+    grid-template-columns: repeat(3, 240px);/* automatic   repeat(auto-fill, 240px);   */
+    justify-content: center;
+    /* margin-bottom: 100px;
+    margin-top: 100px; 
+    margin-top: 20px; */
+    gap: 25px;/* separa los div o contenendores  */
+}
+ 
+.productos{
+    display: grid;
+    margin-right: 25px;
+    
+}   
+
+.productos_img{
+    
+    width:100%;
+    height: 300px;
+    margin-right: 20px;
+    border-radius: 15px;
+    margin: 0;
+    object-fit: cover; /* sirve para mejorar la calidad de la imagen cuando se pone pequeña queda como original  */
+
+}
+
+
+.productos_valor{
+    display: flex;
+    justify-content:space-between;
+    align-items:center; /* centrar vertical  */
+}
+
+.productos_valor figure{
+    margin: 5px;
+}
+
+.valor{
+    font-weight: bold;
+    margin: 2px 2px 2px;
+    font-size: var(--ld);
+    color: var(--black);
+    
+}
+
+.valor_info{
+    margin: 2px 10px;
+    font-size: var(--md);
+    color: var(--very-light-pink);
+}
+
+
+/* revisar media  */
+@media (max-widh: 640px){
+
+    .ofertas_container{
+        display: grid;  /*  */
+        grid-template-columns: repeat(auto-fill, 240px);/* automatic   repeat(auto-fill, 240px);   */
+        justify-content: center;
+        /* margin-bottom: 100px;
+        margin-top: 100px; 
+        margin-top: 20px; */
+        gap: 25px;/* separa los div o contenendores  */
+    }
+
+}
+
+/* buscador  */
+
+.search_container{
+
+    width: 100px;
+    height: auto;
+    border: 1px solid var(--very-light-pink);
+    border-radius: 6px;
+    display: flex;
+    padding: 20px 20px 0 20px;
+   
+}
+
+.search_container ul {
+
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.search_container ul li{
+    font-weight: bolder;/* bordea como negrilla */
+
+    text-align: end;  /* alinea los elementos a la derecha texto  */
+}
+
+.search_container ul li:last-child{
+    padding-top: 20px;
+    border-top: 1px solid var(--very-light-pink);
+}
+
+.search_container ul li:last-child a{
+    color: var(--hospital-green);
+    font-size: var(--sm);
+}
+
+.search_container ul li a{
+    color: var(--back);
+    font-size: var(--sm);
+    text-decoration: none;
+    margin-bottom: 20px;
+    display: inline-block;
+}
+
+/* menu  */                 
+
+.menu_container{
+    padding: 24px;
+    width: 100%;
+    height: auto;
+}
+
+
+.menu_container ul {
+
+    list-style: none;
+    padding:0;
+    margin:24px 0 0;
+    
+    
+}
+
+.menu_container ul li{
+    /* padding: 10px; */
+    margin-bottom: 20px;
+    
+}
+.menu_container a{
+    text-decoration: none;
+    color: var(--black);
+    font-weight: bold;
+    /* margin-bottom: 24px; */
+}
+
+
+.email_menu{
+    font-size: var(--sm);
+    font-weight: 300 !important;
+    /* color: var(--text-input-field); */
+
+}
+
+.menu_container ul:nth-child(1){
+    
+    border-bottom: 1.5px solid var(--very-light-pink);
+    
+}   
+
+.sing_out{
+    color: var(--hospital-green) !important;
+    font-size: var(--sm);
+}
+
+.menu_container ul:last-child{
+    position: absolute;
+    bottom: 0;
+}
+
+
+/*  orden. html  */
+
+.my-order{
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    place-items:center;
+
+}
+
+.title_order{
+    font-size: var(--ld);
+    margin-bottom:40px ;
+}
+.my-order-container{
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    width: 300px;
+
+}
+
+.my-order-contet{
+    display: flex;
+    flex-direction: column;
+}
+
+.shoppin figure img{
+    width: 70px;
+    border-radius: 6px;
+    height: 70px;
+    object-fit: cover;
+}
+
+.shoppin figure{
+    margin:0;
+}
+.shoppin p:nth-child(2){
+    color: var(--very-light-pink);
+    
+
+}
+
+.shoppin p:nth-child(3){
+    font-size: var(--md);
+    font-weight: bold;
+}
+
+.shoppin{
+    display: grid;
+    gap: 15px;
+    grid-template-columns: auto 1fr auto auto;
+    margin-bottom: 24px;
+    align-items: center;
+}
+
+.order{
+    display: grid;
+    grid-template-columns: auto  1fr ;
+    gap: 15px;
+    background-color: var(--text-input-field);
+    margin-bottom: 24px;
+    border-radius: 8px;
+    padding: 0 24px;
+}
+
+.order p:nth-child(1){
+
+    display: flex;
+    flex-direction: column;
+}
+
+.order p span:nth-child(2){
+
+    font-size: var(--sm);
+    color: var(--very-light-pink);
+}
+
+.order p span:nth-child(1){
+
+    font-size: var(--sm);
+    color: var(--back);
+    font-weight: bold;
+}
+
+.order p:nth-child(2){
+    
+    text-align: end;
+    font-weight: bold;
+
+}
+
+/* orders */
+
+.orders{
+
+    display: grid;
+    grid-template-columns: auto  1fr auto ;
+    gap: 15px;
+    margin-bottom: 24px;
+    border-radius: 8px;
+    padding: 0 24px;
+}
+
+
+.orders p:nth-child(1){
+
+    display: flex;
+    flex-direction: column;
+}
+
+.orders p span:nth-child(2){
+
+    font-size: var(--sm);
+    color: var(--very-light-pink);
+}
+
+.orders p span:nth-child(1){
+
+    font-size: var(--sm);
+    color: var(--back);
+    font-weight: bold;
+}
+
+.orders p:nth-child(2){
+    
+    text-align: end;
+    font-weight: bold;
+    /* place-items: center; */
+    margin: 0;
+    align-self: center;
+}
+
+.flecha{
+    text-align: center;
+    color: var(--black);
+    
+    align-self: center; 
+    
+}
+
+/* navbar */
+
+.nav_container{
+    display: flex;
+    width: 100%;
+    height:  80px; 
+    justify-content: space-between;
+    border-bottom: 1px solid var(--very-light-pink);
+}
+.nav_left{
+    display:flex;
+   /*  align-items: center; */
+   /*  width: 100%;
+    
+     grid-template-columns: auto  auto auto auto auto ;
+    height: 70px; */
+}
+
+.logo_nav{
+    width: 55px;
+    height: 55px;
+    border-radius: 50px;
+    padding: 10px;
+
+}
+
+
+.nav_rigth ul,
+.nav_left ul {
+    list-style: none;
+    align-items: center;
+    padding: 0;
+    margin: 0; 
+    display: flex;
+    height: 80px;
+    
+    /* gap 10px; */
+  
+
+}
+
+
+.nav_rigth ul li img,
+.nav_left ul li a{
+    text-decoration: none;
+    color: var(--very-light-pink);
+    border: 1px solid var(--white);
+    padding: 8px;
+    border-radius: 8px;
+    
+}
+
+
+.nav_rigth ul li:hover,
+.nav_left ul li a:hover{
+
+    border: 2px solid var(--hospital-green);
+    color: var(--hospital-green);
+    
+}
+
+
+.nav_left ul{
+    margin-left: 12px;
+}
+
+.emai_nav{
+    color: var(--back);
+    font-size: var(--sm);
+    font-weight: bold;
+    margin-right: 35px;
+}
+
+.car_nav{ /* pegamos la imagen con el texto de abajo de modo relativo  */
+    position: relative;
+    margin-right: 20px;
+    
+}
+
+
+.car_nav div{
+    width: 20px;
+    height: 20px;
+    border-radius: 50px;
+    color: #000000;
+    /* background-color:var(--hospital-green) ;
+    */ font-size: var(--md);
+    font-weight: bold;
+    position: absolute;
+    right: -4.5px;
+    top: 4.5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+}
+
+@media(max-width: 640px){
+    .nav_container{
+        display: grid;
+        grid-template-columns: auto auto auto;
+        
+    }
+    .nav_left ul{
+        display: none;
+    } 
+    .emai_nav{
+        display: none;
+    }
+    .menu{
+        justify-content: first ;
+
+    }
+    
+    .nav_container div:nth-child(1){
+        
+        justify-items: center;
+        /* margin-right: 150px; */
+    }
+    .menu ul {
+    list-style: none;
+    margin: 0;
+    align-items: center;
+    }
+
+    .menu {
+        list-style: none;
+        align-items: center;
+        padding: 0;
+        margin: 0; 
+        display: flex;
+        margin-left: 0;
+        /* height: 80px; */
+        
+    }
+}
+
+@media(min-width: 641px){
+    .menu{
+        display: none;
+    }
+}
+
+
